@@ -1,0 +1,51 @@
+{
+  "name": "@afk/multiverse",
+  "version": "0.1.0",
+  "description": "Fast tracking and collision detection for large volumes of objects within an arbitrary number of dimensions",
+  "main": "src/multiverse.mjs",
+  "ava": {
+    "babel": false,
+    "compileEnhancements": false,
+    "require": [
+      "@babel/register"
+    ],
+    "files": [
+      "test/**/*.js"
+    ]
+  },
+  "scripts": {
+    "coverage": "nyc npm run unit --report=lcov",
+    "test": "npm run coverage",
+    "unit": "ava --verbose"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/asilvas/multiverse.git"
+  },
+  "keywords": [
+    "multiverse",
+    "object",
+    "tracking",
+    "collision",
+    "detection",
+    "3d"
+  ],
+  "author": "Aaron Silvas",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/asilvas/multiverse/issues"
+  },
+  "homepage": "https://github.com/asilvas/multiverse#readme",
+  "devDependencies": {
+    "@babel/cli": "^7.7.0",
+    "@babel/core": "^7.7.2",
+    "@babel/preset-env": "^7.7.1",
+    "@babel/register": "^7.7.0",
+    "ava": "^2.4.0",
+    "cross-env": "^6.0.3",
+    "nyc": "^14.1.1"
+  },
+  "dependencies": {
+    "splaytree": "^3.0.1"
+  }
+}
