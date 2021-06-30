@@ -7,7 +7,7 @@ import clone from './clone';
 import nearestIter from './nearestIter';
 
 const constructor = (dimensionsOrData = 2) => {
-  if (typeof dimensionsOrData === 'object') return parse(dimensionsOrData);
+  if (typeof dimensionsOrData !== 'number') return parse(dimensionsOrData);
 
   const dimensions = Math.max(1, Math.min(dimensionsOrData, 9));
 

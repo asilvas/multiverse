@@ -4,8 +4,9 @@
   "description": "Fast tracking and collision detection for large volumes of objects within an arbitrary number of dimensions",
   "main": "src/multiverse.mjs",
   "ava": {
-    "babel": false,
-    "compileEnhancements": false,
+    "babel": {
+      "compileEnhancements": false
+    },
     "require": [
       "@babel/register"
     ],
@@ -37,15 +38,13 @@
   },
   "homepage": "https://github.com/asilvas/multiverse#readme",
   "devDependencies": {
-    "@babel/cli": "^7.7.0",
-    "@babel/core": "^7.7.2",
-    "@babel/preset-env": "^7.7.1",
-    "@babel/register": "^7.7.0",
-    "ava": "^2.4.0",
-    "cross-env": "^6.0.3",
-    "nyc": "^14.1.1"
-  },
-  "dependencies": {
-    "splaytree": "^3.0.1"
+    "@ava/babel": "^1.0.1",
+    "@babel/cli": "^7.14.5",
+    "@babel/core": "^7.14.6",
+    "@babel/preset-env": "^7.14.7",
+    "@babel/register": "^7.14.5",
+    "ava": "^3.15.0",
+    "cross-env": "^7.0.3",
+    "nyc": "^15.1.0"
   }
 }
