@@ -1,6 +1,6 @@
 {
   "name": "@afk/multiverse",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Fast tracking and collision detection for large volumes of objects within an arbitrary number of dimensions",
   "main": "src/multiverse.mjs",
   "ava": {
